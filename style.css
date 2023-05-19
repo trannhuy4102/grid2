@@ -1,0 +1,60 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+
+body{
+    display: flex;
+    align-items: center;
+}
+
+:root{
+    --lentgh : 100px
+}
+
+.content{
+    margin: auto;
+    width: 40%;
+    display: flex;
+    flex-flow: column;
+    gap: 0.5rem;
+}
+
+.box-row{
+    display: flex;
+    gap: 8px;
+}
+
+.box-colum{
+    display: flex;
+    flex-flow: column;
+    gap: 8px;
+}
+
+
+.cubes{
+    background: #d8d8d8;
+}
+
+.cubes1, .cubes4, .cubes12{
+    width: calc((var(--lentgh)*2) + 8px);
+    height: var(--lentgh);
+}
+
+.cubes2, .cubes3, .cubes6, .cubes7,
+.cubes8, .cubes9, .cubes13, .cubes14{
+    width: var(--lentgh);
+    height: var(--lentgh);
+}
+
+.cubes5, .cubes10, .cubes11{
+    width: var(--lentgh);
+    height: calc((var(--lentgh)*2) + 8px);
+}
